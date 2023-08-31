@@ -8,7 +8,6 @@ class entidadesServices():
 
         for frase in texto:
             entidades= reconocer_entidad(frase)
-            listado = list(entidades)
             resultado.append({"oracion":frase, "entidades": entidades})
         return resultado;
 
